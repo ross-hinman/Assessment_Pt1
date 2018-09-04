@@ -1,0 +1,11 @@
+﻿@model FinalPt1.Models.NumbersViewModel
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(x => x.A)<br />
+    @Html.EditorFor(x => x.B)<br />
+    <input type="submit" value="Add" />
+}
+    <h2>
+        Results = @ViewBag.Sum
+    </h2>
